@@ -104,11 +104,11 @@ section h1{
     background-color: rgb(41, 39, 39);
 }
 .item1{
-    background-image: url(img/clockeer.png);
+    background-image: url("img/clockeer.png");
 
 }
 .item2{
-    background-image: url(img/clock2.jpg);
+    background-image: url("img/clock2.jpg");
 
 }
 .item3{
