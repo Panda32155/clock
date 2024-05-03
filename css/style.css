@@ -50,7 +50,6 @@ font-size:  calc(12px + (27 - 12) * ((100vw - 320px) / (1600 - 320)));;
     box-sizing:border-box;
     min-width: 100vh;
     height: 100vh;
-    border: 1px solid red;
     background-image: url("/clock/img/ron19c1l.png");
     background-repeat: no-repeat;
     background-size:cover;
@@ -69,7 +68,6 @@ font-size:  calc(12px + (27 - 12) * ((100vw - 320px) / (1600 - 320)));;
     margin-left: 50px;
     text-align:start;
     color:rgb(255, 255, 255);
-    border: 1px solid red;
     max-width: 400px;
     font-size: calc(8px + (12 - 8) * ((100vw - 320px) / (1600 - 320)));
 }
@@ -97,7 +95,6 @@ font-size:  calc(12px + (27 - 12) * ((100vw - 320px) / (1600 - 320)));;
 .flexitem{
     width: 400px;
     height: 400px;
-    border: 2px solid red;
     background-size:cover;
     background-repeat:no-repeat;
     border-radius: 1rem; 
@@ -137,7 +134,6 @@ font-size:  calc(12px + (27 - 12) * ((100vw - 320px) / (1600 - 320)));;
     align-items:center;
     bottom: 40%;
     color:aliceblue;
-    border: 1px solid red;
     padding-left: 10px;
     font-size: 30px;
 }
@@ -182,7 +178,6 @@ margin-left: 120px;
     color: #e7e7e7;
     left: 200px;
     bottom: 70px; 
-    border: 2px solid red;
     
  }
 .telega{
