@@ -51,7 +51,7 @@ font-size:  calc(12px + (27 - 12) * ((100vw - 320px) / (1600 - 320)));;
     min-width: 100vh;
     height: 100vh;
     border: 1px solid red;
-    background-image: url(img/ron19c1l.png);
+    background-image: url(/clock/img/ron19c1l.png);
     background-repeat: no-repeat;
     background-size:cover;
     background-attachment:local;
@@ -104,15 +104,15 @@ section h1{
     background-color: rgb(41, 39, 39);
 }
 .item1{
-    background-image: url("img/clockeer.png");
+    background-image: url("/clock/img/clockeer.png");
 
 }
 .item2{
-    background-image: url("img/clock2.jpg");
+    background-image: url("/clock/img/clock2.jpg");
 
 }
 .item3{
-    background-image: url(img/clock3.jpg);
+    background-image: url(/clock/img/clock3.jpg);
    
 }
 .item4{
