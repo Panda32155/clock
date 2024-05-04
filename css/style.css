@@ -50,7 +50,7 @@ font-size:  calc(12px + (27 - 12) * ((100vw - 320px) / (1600 - 320)));;
     box-sizing:border-box;
     min-width: 100vh;
     height: 100vh;
-    background-image: url(/clock/ron19c1l.png);
+    background-image: url(/clock/img/ron19c1l.png);
     background-repeat: no-repeat;
     background-size:cover;
     background-attachment:local;
