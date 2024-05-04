@@ -34,11 +34,11 @@ font-size:  calc(12px + (27 - 12) * ((100vw - 320px) / (1600 - 320)));;
     height: 2px;
     background-color: rgb(255, 12, 12);
     width: 0;
-    transition: width 0.5s ease;
+    transition: width 0.5s ease; /* Анимация расширения полосы подчеркивания */
 }
 
 .navbar ul li a:hover::after {
-    width: 100%; 
+    width: 100%; /* Увеличение ширины при наведении */
 }
 
 .fa-instagram{
@@ -50,7 +50,7 @@ font-size:  calc(12px + (27 - 12) * ((100vw - 320px) / (1600 - 320)));;
     box-sizing:border-box;
     min-width: 100vh;
     height: 100vh;
-    background-image: url("/clock/img/ron19c1l.png");
+    background-image: url(img/ron19c1l.png);
     background-repeat: no-repeat;
     background-size:cover;
     background-attachment:local;
@@ -87,43 +87,50 @@ font-size:  calc(12px + (27 - 12) * ((100vw - 320px) / (1600 - 320)));;
     flex-wrap: wrap; 
     justify-content:space-evenly;
     align-items:center;
-    gap: 10px;
+    gap: 50px;
     min-width: 100vh;    
     min-height: 100vh;
     
 }
 .flexitem{
+    position: relative;
     width: 400px;
     height: 400px;
     background-size:cover;
     background-repeat:no-repeat;
     border-radius: 1rem; 
     background-blend-mode:overlay;
-    background-color: rgb(41, 39, 39);
+    background-color: rgb(247, 241, 241);
+    
 }
 .item1{
-    background-image: url("/clock/img/clockeer.png");
-
+    position: relative;
+    overflow: hidden;
 }
 .item2{
-    background-image: url("/clock/img/clock2.jpg");
+   
+    position: relative;
+    overflow: hidden;
 
 }
 .item3{
-    background-image: url("/clock/img/clock3.jpg");
-   
+    
+    position: relative;
+    overflow: hidden;
 }
 .item4{
-    background-image: url("/clock/img/clock4.jpg");
-   
+  
+    position: relative;
+    overflow: hidden;
 }
 .item5{
-    background-image: url("/clock/img/clock5.jpg");
-  
+    
+    position: relative;
+    overflow: hidden;
 }
 .item6{
-    background-image: url("/clock/img/clock6.jpg");
-    
+    position: relative;
+    overflow: hidden;
   
 }
 .flex p{
@@ -138,17 +145,106 @@ font-size:  calc(12px + (27 - 12) * ((100vw - 320px) / (1600 - 320)));;
     font-size: 30px;
 }
 .item1 p{
+    content:"";
     padding-left: 30px;
+     z-index: 2;
+    
 }
 
-.flexitem:hover{
+.flexitem::after{
+    position: absolute;
+    content: "";
+    transition:  .9s;
+    width: 100%;
+    height: 100%;
+    background-color:rgb(255, 0, 0); 
+    cursor: pointer;
     background-blend-mode:overlay;
     background-color: rgba(80, 82, 80, 0.5);
-    cursor: pointer;
-    vertical-align: none;
-    transform: scale(1.1);
-    transition:  .9s;
+     z-index: -1;
+     top:0;
+     left: 0;
+     
+}
+.item1:after{
+    display: flex; 
+    font-size: 30px;
+    text-align: center;
+    align-items:center;
+    content:"Ремонт часов (наручных, настольных, настенных, напольных, карманных)";
+    top:20px;
+    color:aliceblue;
+    background-image: url(img/clockeer.png);
+    background-size:cover;
+    z-index: -1;    
+}
+.item2:after{
+    display: flex; 
+    font-size: 30px;
+    text-align: center;
+    align-items:center;
+    content:"Замена элементов питания в часах";
+    top:20px;
+    color:aliceblue;
+    background-image: url(img/clock2.jpg);
+    background-size:cover;
+    z-index: -1;
+}
+.item3:after{
+    display: flex; 
+    font-size: 30px;
+    justify-content: center;
+    align-items:center;
+    content:"Замена механизма ";
+    top:20px;
+    color:aliceblue;
+    background-image: url(img/clock3.jpg);
+    background-size:cover;
 
+    z-index: -1;
+}
+.item4:after{
+    display: flex; 
+    font-size: 30px;
+    content:"Чистка и смазка";
+    top:20px;
+    color:aliceblue;
+    background-image: url(img/clock4.jpg);
+    background-size:cover;
+    z-index: -1;
+    justify-content: center;
+    align-items:center;
+}
+.item5:after{
+    display: flex; 
+    font-size: 30px;
+    justify-content: center;
+    align-items:center;
+    content:"замена ремешков";
+    top:20px;
+    color:aliceblue;
+    background-image: url(img/clock5.jpg);
+    background-size:cover;
+    z-index: -1;
+   
+}
+.item6:after{
+    display: flex; 
+    font-size: 30px;
+    content:"замена стекла";
+    top:20px;
+    color:aliceblue;
+    background-image: url(img/clock6.jpg);  
+    background-size:cover;
+    z-index: -1;
+    justify-content: center;
+    align-items:center;
+}
+.item1,.item2,.item3,.item4,.item5,.item6,:hover::after{
+    transform: scale(1.1);
+    z-index: 1;
+     background-blend-mode:overlay;
+    background-color: rgba(0, 0, 0, 0.548);
 }
 footer{
     position:static;
@@ -161,11 +257,12 @@ footer{
 footer{
     position: relative;
     min-width: 100vh ;
-    font-size: calc(16px + (24 - 16) * ((100vw - 320px) / (1600 - 320)));
+    font-size: calc(12px + (24 - 12) * ((100vw - 320px) / (1600 - 320)));
     text-align: center;
 }
 .ref2{
 margin-left: 170px;
+
 }
 .contact
   {
