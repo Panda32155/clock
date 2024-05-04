@@ -1,5 +1,5 @@
 body{
-    background-image: url(img-item1/item1back.png);
+    background-image: url(img/item1back.png);
     background-blend-mode:overlay;
     background-color: rgba(173, 180, 197, 0.863);
     min-width:100vw;
