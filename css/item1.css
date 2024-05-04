@@ -94,7 +94,7 @@ main h2{
 
 .button{
     font-weight: 600;
-    top: 40px;
+    top: 80px;
     position: relative;
     font-size: calc(20px + (30 - 20) * ((100vw - 320px) / (1600 - 320)));
     max-width: 300px;
@@ -117,7 +117,7 @@ footer{
     box-sizing:border-box;
     bottom:0px;
     border-top: 2px solid red;
-    margin-top: 300px;
+    margin-top: 400px;
 }
 footer{
     position: relative;
