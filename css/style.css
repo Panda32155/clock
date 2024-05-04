@@ -17,7 +17,8 @@ body{
     background-color:black;
     padding: 30px;
     margin: 0;
-    z-index: 1;
+    z-index: 3;
+    left:0;
 }
 .navbar ul li a{
 position: relative;
