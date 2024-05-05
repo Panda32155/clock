@@ -116,7 +116,6 @@ font-size:  calc(12px + (27 - 12) * ((100vw - 320px) / (1600 - 320)));;
 
 }
 .item3{
-    
     position: relative;
     overflow: hidden;
 }
