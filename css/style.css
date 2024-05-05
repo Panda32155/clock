@@ -1,0 +1,302 @@
+body{
+    background-color:black;
+    overflow-x: hidden;
+    min-width: 100vw;
+}
+.navbar {
+    text-decoration:none;
+}
+.navbar ul {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex; 
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+    box-sizing:border-box;
+    background-color:black;
+    padding: 30px;
+    margin: 0;
+    z-index: 3;
+    left: 0;
+}
+.navbar ul li a{
+position: relative;
+text-decoration: none;
+color:azure;
+font-size:  calc(12px + (27 - 12) * ((100vw - 320px) / (1600 - 320)));;
+}
+
+.navbar ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: 0;
+    height: 2px;
+    background-color: rgb(255, 12, 12);
+    width: 0;
+    transition: width 0.5s ease; /* Анимация расширения полосы подчеркивания */
+}
+
+.navbar ul li a:hover::after {
+    width: 100%; /* Увеличение ширины при наведении */
+}
+
+.fa-instagram{
+    margin-right:10px;
+}
+
+.backfon{
+    display: flex;
+    box-sizing:border-box;
+    min-width: 100vh;
+    height: 100vh;
+    background-image: url(/img/ron19c1l.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment:local;
+    background-blend-mode: multiply;
+    background-color: rgb(196, 103, 103); 
+    background-position:top;
+    justify-content: center;
+    align-items: center;
+    
+}
+.textmain{
+    position: absolute;
+    box-sizing: border-box;
+    top: 180px;
+    margin-left: 50px;
+    text-align:start;
+    color:rgb(255, 255, 255);
+    max-width: 400px;
+    font-size: calc(8px + (12 - 8) * ((100vw - 320px) / (1600 - 320)));
+}
+
+.texth1{
+    position: relative;
+    min-width: 100vh;
+    font-size: calc(18px + (22 - 18) * ((100vw - 320px) / (1600 - 320)));
+    text-align:center;
+    color:rgb(255, 255, 255);
+    text-shadow: 3px .2px 0px rgb(0, 0, 0);
+}
+.flex{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap; 
+    justify-content:space-evenly;
+    align-items:center;
+    gap: 50px;
+    min-width: 100vh;    
+    min-height: 100vh;
+    
+    
+}
+.flexitem{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background-size:cover;
+    background-repeat:no-repeat;
+    border-radius: 1rem; 
+    background-blend-mode:overlay;
+    background-color: rgb(247, 241, 241);
+    
+}
+.item1{
+    position: relative;
+    overflow: hidden;
+}
+.item2{
+   
+    position: relative;
+    overflow: hidden;
+
+}
+.item3{
+    
+    position: relative;
+    overflow: hidden;
+}
+.item4{
+  
+    position: relative;
+    overflow: hidden;
+}
+.item5{
+    
+    position: relative;
+    overflow: hidden;
+}
+.item6{
+    position: relative;
+    overflow: hidden;
+  
+}
+.flex p{
+    display: flex;
+    box-sizing:border-box;  
+    height: 387px;
+    justify-content: center;
+    align-items:center;
+    bottom: 40%;
+    color:aliceblue;
+    padding-left: 10px;
+    font-size: 30px;
+}
+.item1 p{
+    content:"";
+    padding-left: 30px;
+     z-index: 2;
+    
+}
+
+.flexitem::after{
+    position: absolute;
+    content: "";
+    transition:  .9s;
+    width: 100%;
+    height: 100%;
+    background-color:rgb(255, 0, 0); 
+    cursor: pointer;
+    background-blend-mode:overlay;
+    background-color: rgba(80, 82, 80, 0.5);
+     z-index: -1;
+     top:0;
+     left: 0;
+     
+}
+.item1:after{
+    display: flex; 
+    font-size: 30px;
+    text-align: center;
+    align-items:center;
+    content:"Ремонт часов (наручных, настольных, настенных, напольных, карманных)";
+    top:20px;
+    color:aliceblue;
+    background-image: url(/img/clockeer.png);
+    background-size:cover;
+    z-index: -1;    
+}
+.item2:after{
+    display: flex; 
+    font-size: 30px;
+    text-align: center;
+    align-items:center;
+    content:"Замена элементов питания в часах";
+    top:20px;
+    color:aliceblue;
+    background-image: url(/img/clock2.jpg);
+    background-size:cover;
+    z-index: -1;
+}
+.item3:after{
+    display: flex; 
+    font-size: 30px;
+    justify-content: center;
+    align-items:center;
+    content:"Замена механизма ";
+    top:20px;
+    color:aliceblue;
+    background-image: url(/img/clock3.jpg);
+    background-size:cover;
+
+    z-index: -1;
+}
+.item4:after{
+    display: flex; 
+    font-size: 30px;
+    content:"Чистка и смазка";
+    top:20px;
+    color:aliceblue;
+    background-image: url(/img/clock4.jpg);
+    background-size:cover;
+    z-index: -1;
+    justify-content: center;
+    align-items:center;
+}
+.item5:after{
+    display: flex; 
+    font-size: 30px;
+    justify-content: center;
+    align-items:center;
+    content:"замена ремешков";
+    top:20px;
+    color:aliceblue;
+    background-image: url(/img/clock5.jpg);
+    background-size:cover;
+    z-index: -1;
+   
+}
+.item6:after{
+    display: flex; 
+    font-size: 30px;
+    content:"замена стекла";
+    top:20px;
+    color:aliceblue;
+    background-image: url(/img/clock6.jpg);  
+    background-size:cover;
+    z-index: -1;
+    justify-content: center;
+    align-items:center;
+}
+.item1,.item2,.item3,.item4,.item5,.item6,:hover::after{
+    transform: scale(1.1);
+    z-index: 1;
+     background-blend-mode:overlay;
+    background-color: rgba(0, 0, 0, 0.548);
+}
+footer {
+    position: relative;
+    min-width: 100vh;
+    font-size: calc(12px + (24 - 12) * ((100vw - 320px) / (1600 - 320)));
+    text-align: center;
+    color: rgb(255, 254, 254);
+    box-sizing: border-box;
+    bottom: 0;
+    border-top: 2px solid red;
+    margin-top: 400px;
+}
+
+footer p{
+    display: flex;
+    position: relative;
+    text-align: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+ .inst{
+    font-size: calc(19px + (30 - 19) * ((100vw - 320px) / (1600 - 320)));
+    text-align: center;
+    position: relative;
+    color: #ffffff;
+    margin-left: 120px;
+    bottom: 50px;
+    left:  calc(-3px + (65 - -3) * ((100vw - 320px) / (1600 - 320)));
+    bottom:  calc(30px + (50 - 30) * ((100vw - 320px) / (1600 - 320)));
+ }
+.telega{
+    font-size: calc(19px + (30 - 19) * ((100vw - 320px) / (1600 - 320)));
+    text-align: center;;
+    position: relative;
+    color: #0099ff;
+    left:  calc(140px + (220 - 140) * ((100vw - 320px) / (1600 - 320)));
+    bottom:  calc(60px + (105 - 60) * ((100vw - 320px) / (1600 - 320)));
+    padding:0px;
+}
+
+ 
+
+@media screen and (min-width:1768px) and ( max-width: 2000px){
+   .flex{ padding-inline: 100px;
+   }
+}
+@media screen and (min-width:2000px) and ( max-width: 2900px){
+   .flex{ padding-inline: 200px;
+   }
+}
